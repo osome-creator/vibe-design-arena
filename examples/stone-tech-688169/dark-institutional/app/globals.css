@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0d1117;
+  --color-foreground: #e6edf3;
+  --color-surface: #161b22;
+  --color-border: #30363d;
+  --color-border-subtle: #21262d;
+  --color-primary: #58a6ff;
+  --color-danger: #f78166;
+  --color-success: #3fb950;
+  --color-accent-purple: #bc8cff;
+  --color-accent-amber: #d29922;
+  --color-text-heading: #e6edf3;
+  --color-text-body: #8b949e;
+  --color-text-muted: #6e7681;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Table striped rows */
+table tbody tr:nth-child(even) {
+  background: #161b22;
+}
+table tbody tr:nth-child(odd) {
+  background: #0d1117;
+}
